@@ -29,6 +29,9 @@
       margin-right:15px;
       border: 1px solid #bbb;
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 1px 5px rgba(0, 0, 0, 0.1);
+      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+      box-sizing: border-box;         /* Opera/IE 8+ */
     }
     .fancybox-wrap .fancybox-title {
       text-overflow: ellipsis;
@@ -40,7 +43,11 @@
     @media (max-width:480px) {
       body {
         width: 100%;
-        margin: 10px 10%;
+        margin: 10px;
+      }
+      .fancybox img {
+        margin: 3px;
+        width: 46%;
       }
 	  }
   </style>
